@@ -1,4 +1,4 @@
-# ElixirProductReview
+# Product Reviews
 
 To start your Phoenix server:
 
