@@ -25,9 +25,14 @@ defmodule ElixirProductReviewWeb.ProductLive.FormComponent do
         <.input field={@form[:description]} type="text" label="Description" />
         <.input field={@form[:overall_rating]} type="number" label="Overall rating" />
         <.input field={@form[:image_url]} type="text" label="Image url" />
+        
         <:actions>
+          <div class="form-group">
           <.button phx-disable-with="Saving...">Save Product</.button>
+          <.back navigate={~p"/products"}>Back to products</.back>
+          </div>
         </:actions>
+        
       </.simple_form>
     </div>
     """

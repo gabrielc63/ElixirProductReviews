@@ -6,7 +6,7 @@ defmodule ElixirProductReview.Products.Product do
     field :description, :string
     field :image_url, :string
     field :name, :string
-    field :overall_rating, :integer
+    field :overall_rating, :integer, default: 0
 
     timestamps()
   end
